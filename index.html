@@ -33,76 +33,104 @@
     <meta charset="UTF-8">
 
     <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-<table>
-    <tr>
-        <td>
-            <img src="avatar.jpg"
-                 alt="My picture is here" width="200">
-        </td>
-        <td>
+<div class="container">
+    <div class="info">
+        <img src="avatar.jpg"
+             alt="My picture is here" class="avatar">
+        <div class="info-text">
             <h1>Pavel Degtyarev</h1>
             <p><em>I'm a beginner <strong>programmer</strong></em></p>
             <p>I love travelling and programming</p>
-        </td>
-    </tr>
-</table>
 
+            <h4>My contacts</h4>
 
-<hr>
-<h2>My contacts</h2>
-<ul type="circle">
-    <li >Email: 2226873@mail.ru</li>
-    <li><a target="_blank" href="https://t.me/degtyarev_p">TG: @degtyarev_p</a></li>
-</ul>
+            <a target="_blank" href="https://mail.ru">Email: 2226873@mail.ru</a>
+            |
+            <a target="_blank" href="https://t.me/degtyarev_p">TG: @degtyarev_p</a>
+        </div>
+    </div>
 
+    <div class="card bg-yellow">
+        <h2>My hobby</h2>
+        <ol class="list">
+            <li>Travelling</li>
+            <li>Programming</li>
+            <li>Inventiveness</li>
+        </ol>
+    </div>
 
-<h2>My hobby</h2>
-<ol type="a" start="1">
-    <li>Travelling</li>
-    <li>Programming</li>
-    <li>Inventiveness</li>
-</ol>
-<h2>Job</h2>
-<table border="1">
+    <div class="card bg-green">
+        <h2>Job</h2>
+        <table class="table">
 
-    <tr>
-        <th>Company</th>
-        <th>Specialization</th>
-        <th>Years</th>
-    </tr>
+            <tr>
+                <th>Company</th>
+                <th>Specialization</th>
+                <th>Years</th>
+            </tr>
 
-    <tbody>
-    <tr>
-        <td>Company 1</td>
-        <td>Fireman</td>
-        <td>2014-2020</td>
-    </tr>
-    <tr>
-        <td>Company 2</td>
-        <td>Cook</td>
-        <td>2020-2023</td>
-    </tr>
-    </tbody>
-</table>
-<h2>Courses</h2>
-<a href="youtybe.html">List of courses</a>
-<h2>Contact me</h2>
-<form action="/">
-    <label for="name">Your name:</label>
-    <input type="text" id="name" placeholder="Enter name...">
-    <br>
-    <label for="email">Your Email: </label>
-    <input type="email" id="email">
-    <br>
-    <label for="text">Your message: </label>
-    <br>
-    <textarea name="" id="text" cols="30" rows="2"></textarea>
-    <br>
+            <tbody>
+            <tr>
+                <td>Company 0</td>
+                <td>Policeman</td>
+                <td>2014-2017</td>
+            </tr>
+            <tr>
+                <td>Company 1</td>
+                <td>Fireman</td>
+                <td>2017-2020</td>
+            </tr>
+            <tr>
+                <td>Company 2</td>
+                <td>Driver</td>
+                <td>2020-2022</td>
+            </tr>
+            <tr>
+                <td>Company 3</td>
+                <td>Builder</td>
+                <td>2022-now</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <input type="submit" value="Send">
-</form>
+    <div class="card bg-red">
+        <h2>Courses</h2>
+        <ul class="link-list">
+            <li><a target="_blank" href="https://youtu.be/SpCUuyZZTp8?si=oJzQeQK6ZtPNYqYf">CSS для Начинающих -
+                Практический Курс</a></li>
+            <li><a target="_blank" href="https://youtu.be/DOEtVdkKwcU?si=a-j40J7LkIjxHWfD">HTML для Начинающих -
+                Практический Курс</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <h2>Contact me</h2>
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Enter name...">
+                </div>
 
+                <div class="form-group">
+                    <label for="email">Your Email: </label>
+                    <input type="email" id="email" placeholder="Enter email...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="text">Your message: </label>
+                <textarea name="" id="text" cols="30" rows="2"></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Send">
+        </form>
+    </div>
+
+</div>
 </body>
 </html>
